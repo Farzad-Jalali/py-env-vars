@@ -20,6 +20,7 @@ RUN apt-get update \
 
 COPY . /app
 WORKDIR /app
+RUN ls 
 RUN pip install --upgrade pip
 RUN  pip install  -r requirements.txt
 EXPOSE 5000
